@@ -1,0 +1,119 @@
+body {
+    background-color: rgba(11, 1, 24, 0.856);
+}
+.content-parent-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+background-image: url(./MeddleCover.jpeg);
+font-family: 'Abril Fatface', cursive;
+overflow: hidden;
+margin: 100px auto;
+width: 306px;
+height: 300px;
+text-align: center;
+
+}
+.card1 {
+    background-image: url(./The_Dark_Side_of_the_Moon.png);
+    width: 300px;
+}
+
+.card2 {
+    background-image: url(./Pink_Floyd-Animals-Frontal.jpg);
+    width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 700ms;
+    box-shadow: 0px 0px 40px #5fc3e4b9;
+  
+}
+.card:hover .card-content  {
+    
+    transition-delay: 250ms;
+    transform: translateY(0);
+    
+}
+.card:hover .card-title::after {
+    transition: 500ms;
+    width: 100%;
+}
+
+.card-content {
+    height: 100%;
+    transition-delay: 400ms;
+    transition:  500ms;
+    transform: translateY(59%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.001) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+
+
+.card-title {
+    font-size: 50px;
+    color: rgba(174, 250, 227, 0.856);
+    text-align: left;
+    
+}
+
+.card-title1 {
+    font-size: 30px;
+    color: whitesmoke;
+}
+.card-title2 {
+    color: #ffc782;
+}
+
+
+.card-title::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 10px;
+    background-color: #5fc3e4f5;
+    
+}
+
+.card-desc {
+    font-size: 20px;
+    color: rgba(5, 206, 189, 0.959);
+}
+
+.card-desc1 {
+    color:whitesmoke;
+}
+.card-desc2 {
+    color:#ffc782;
+}
+
+.card-butt {
+    text-decoration: none;
+    background:  linear-gradient(to right, #e55d88b7 0%, #5FC3E4  51%, #e55d88c0  100%);
+    color: #4d1c34;
+    border-radius: 10px;
+    padding: 5px;
+    transition-duration: 1s;
+    opacity: 0.85;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.card-butt:hover {
+    color: #ffc782;
+    box-shadow: 0px 0px 15px  #ffc782;
+    background-position:  right center;
+    
+    
+}
+
+
+
+
