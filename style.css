@@ -114,6 +114,13 @@ text-align: center;
     
 }
 
-
+.main-content {
+    width: 85%;
+    height: 100px;
+    margin: 100px auto;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(12, 2, 28, 0.756);
+}
 
 
